@@ -1,8 +1,10 @@
 import { Metadata } from "next"
-import { Button } from "../components/Button/Button"
-import { LP_GRID_ITEMS } from "../lp-items"
+
+
 import { Header } from "../components/Header/header"
 import { Footer } from "../components/Footer/footer"
+import { BodyCards } from "../components/Main_Body/bodyCards"
+import { BodyHead } from "@/components/Main_Body/bodyHead"
 export const metadata: Metadata = {
   title: "Next.js Enterprise Boilerplate",
   twitter: {
@@ -26,48 +28,15 @@ export default function Web() {
     <header>
       <Header />
     </header>
-      <section className="bg-white background-gradient">
-        <div className="mx-auto grid max-w-screen-xl px-4 py-8 text-center lg:py-16">
-          <div className="mx-auto place-self-center">
-            <h1 className="mb-4 max-w-2xl text-4xl font-extrabold leading-none tracking-tight dark:text-white md:text-5xl xl:text-6xl">
-              Code Candy
-            </h1>
-            <p className="mb-6 max-w-2xl  md:text-lg lg:mb-8 lg:text-xl gradient-color-text">
-            <span className="text-lg"> 	❝ </span>
-            The ultimate developer's toolkit, brimming with delightful utilities for coding, image processing, mini-games, and much more. Sweeten your workflow with a sprinkle of fun and functionality!
-            <span className="text-lg">  	❞ </span>
-            </p>
-            <Button href="" className="mr-3 text-white bg-gradient-to-br from-green-400 to-blue-600 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-green-200 dark:focus:ring-green-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2">
-              Get started
-            </Button>
-            <Button
-              href="#"
-              intent="secondary"
-              className="text-white bg-gradient-to-br from-green-400 to-blue-600 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-green-200 dark:focus:ring-green-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2"
-            >
-              Play Game
-            </Button>
-          </div>
-        </div>
-      </section>
-      <section className="bg-white background-gradient-card">
-        <div className="mx-auto max-w-screen-xl px-4 py-8 sm:py-16 lg:px-6">
-          <div className="justify-center space-y-8 md:grid md:grid-cols-2 md:gap-12 md:space-y-0 lg:grid-cols-3">
-            {LP_GRID_ITEMS.map((singleItem) => (
-              <div key={singleItem.title} className="flex flex-col items-center justify-center text-center">
-                <div className="mb-4 flex h-10 w-10 items-center justify-center rounded-full bg-primary-100 p-1.5 text-blue-700 dark:bg-primary-900 lg:h-12 lg:w-12">
-                  {singleItem.icon}
-                </div>
-                <h3 className="mb-2 text-xl font-bold dark:text-white">{singleItem.title}</h3>
-                <p className="text-gray-500 dark:text-gray-400">{singleItem.description}</p>
-              </div>
-            ))}
-          </div>
-        </div>  
-      </section>
-      <footer>
-            <Footer />
-      </footer>
+    <section>
+      <BodyHead />
+    </section>
+    <section>
+      <BodyCards />
+    </section>
+    <footer>
+      <Footer />
+    </footer>
     </>
   )
 }
