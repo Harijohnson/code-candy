@@ -39,10 +39,10 @@ export function BodyCards() {
 
   const handleMouseLeave = (index: number) => (e: React.MouseEvent<HTMLDivElement, MouseEvent>) => {
     // Delay the de-growth effect
-    setTimeout(() => {
+    // setTimeout(() => {
       setHoveredCard(null);
       setAnimationDirection('');
-    }, 500); // Adjust the delay time as needed
+    // }, 500); // Adjust the delay time as needed
   };
 
   return (
@@ -52,13 +52,13 @@ export function BodyCards() {
           {LP_GRID_ITEMS.map((singleItem, index) => (
             <div
               key={singleItem.title}
-              className={`card-container w-full max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 shadow-2xl ${
+              className={`card-container w-full max-w-sm  border border-gray-200 rounded-lg shadow  shadow-2xl  ${
                 hoveredCard === index ? 'entered' : hoveredCard === null ? 'exited' : ''
               } ${animationDirection}`}
               onMouseEnter={handleMouseEnter(index)}
               onMouseLeave={handleMouseLeave(index)}
             >
-              <div className="flex justify-end px-4 pt-4">
+              {/* <div className="flex justify-end px-4 pt-4">
                 <button
                   id="dropdownButton"
                   data-dropdown-toggle="dropdown"
@@ -107,29 +107,29 @@ export function BodyCards() {
                     </li>
                   </ul>
                 </div>
-              </div>
-              <div className="card-content flex flex-col items-center pb-10">
-                <div className="mb-4 flex h-10 w-10 items-center justify-center rounded-full bg-primary-100 p-1.5 text-blue-700 dark:bg-primary-900 lg:h-12 lg:w-12">
+              </div> */}
+              <div className="card-content flex flex-col items-center px-8 py-10">
+                <div className="mb-4 flex h-10 w-10 items-center justify-center rounded-full bg-primary-100 p-1.5 text-black dark:bg-primary-900 lg:h-12 lg:w-12">
                   {singleItem.icon}
                 </div>
-                <h5 className="mb-1 text-xl font-medium text-gray-900 dark:text-white px-6">
+                <h5 className="mb-1 text-xl font-medium text-gray-900 dark:text-black px-6">
                   {singleItem.title}
                 </h5>
-                <span className="text-sm text-gray-500 dark:text-gray-400 px-6">
+                <span className="text-sm text-gray-500 dark:text-black px-6">
                   {singleItem.description}
                 </span>
                 <div className="flex mt-4 md:mt-6">
                   <a
                     href="#"
-                    className="inline-flex items-center px-4 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+                    className="inline-flex items-center px-4 py-2 text-sm font-medium text-center text-white bg-white-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-green-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
                   >
-                    Add friend
+                    View
                   </a>
                   <a
                     href="#"
-                    className="py-2 px-4 ms-2 text-sm font-medium text-gray-900 focus:outline-none bg-white rounded-lg border border-gray-200 hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-4 focus:ring-gray-100 dark:focus:ring-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700"
+                    className="py-2 px-4 ms-2 text-sm font-medium text-white-100 outline-none bg-white rounded-lg border  hover:bg-gray-100 hover:text-green-700 focus:z-10 focus:ring-4 focus:ring-gray-100 dark:focus:ring-gray-700 dark:bg-gray-400 dark:text-black-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700"
                   >
-                    Message
+                    Learn
                   </a>
                 </div>
               </div>

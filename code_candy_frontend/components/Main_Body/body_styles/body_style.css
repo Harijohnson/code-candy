@@ -3,7 +3,7 @@
     overflow: hidden;
     background: #fff; /* Fallback color */
     border-radius: 12px; /* Rounded corners for the card */
-    transition: background-color 0.5s ease;
+    transition: background-color 1s;
     /* Ensure the card content is above the gradient effect */
     z-index: 1;
 }
@@ -15,9 +15,10 @@
     left: 50%;
     width: 300%;
     height: 300%;
-    background: linear-gradient(45deg, rgba(102, 87, 48, 0.6), rgba(243, 200, 198, 0.6)); /* Gradient color with transparency */
+    background: rgb(39,107,227);
+    background: radial-gradient(circle, rgba(39,107,227,0.6) 0%, rgba(72,215,133,0.31535942013524154) 55%); 
     transform: translate(-50%, -50%) scale(0);
-    transition: transform 1.5s ease, opacity 1.5s ease;
+    transition: transform 0.8s ease, opacity 0.4s ease;
     z-index: -1; /* Behind the card content */
     border-radius: 50%; /* Makes the gradient oval */
     pointer-events: none;
@@ -47,4 +48,8 @@
 .card-container.exited::before {
     transform: translate(-50%, -50%) scale(0);
     opacity: 0;
+}
+
+.card-container{
+background: rgba(164, 164, 163, 0.3) !important;
 }
