@@ -3,7 +3,7 @@
 import React, { useState } from 'react';
 import { LP_GRID_ITEMS } from "../../lp-items";
 import "./body_styles/body_style.css";
-
+import  Link  from "next/link";
 interface LPItem {
   title: string;
   icon: React.ReactNode;
@@ -119,18 +119,18 @@ export function BodyCards() {
                   {singleItem.description}
                 </span>
                 <div className="flex mt-4 md:mt-6">
-                  <a
-                    href="#"
+                  <Link
+                    href={singleItem.link}
                     className="inline-flex items-center px-4 py-2 text-sm font-medium text-center text-white bg-white-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-green-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
                   >
-                    View
-                  </a>
-                  <a
+                    Lets Go
+                  </Link>
+                  {/* <a
                     href="#"
                     className="py-2 px-4 ms-2 text-sm font-medium text-white-100 outline-none bg-white rounded-lg border  hover:bg-gray-100 hover:text-green-700 focus:z-10 focus:ring-4 focus:ring-gray-100 dark:focus:ring-gray-700 dark:bg-gray-400 dark:text-black-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700"
                   >
                     Learn
-                  </a>
+                  </a> */}
                 </div>
               </div>
             </div>
