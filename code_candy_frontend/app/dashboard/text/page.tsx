@@ -75,7 +75,7 @@ export default function Page() {
     };
 
     return (
-        <div className="bg-red-700 p-5">
+        <div className="bg-gradient-to-r from-cyan-500 to-blue-500 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-cyan-300 dark:focus:ring-cyan-800 font-medium rounded-lg  p-5">
             <form className="flex gap-4 mt-4 justify-center pb-5">
                 <div className="flex flex-col gap-2">
                     <label htmlFor="count">Count of words</label>
@@ -86,7 +86,7 @@ export default function Page() {
                         className='text-black'
                         onChange={(e: React.ChangeEvent<HTMLInputElement>) => setCount(Number(e.target.value))}
                     />
-                    <button type="button" onClick={handleCountSubmit}>Submit Count</button>
+                    <button type="button" className="text-gray-900 bg-gradient-to-r from-red-200 via-red-300 to-yellow-200 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-red-100 dark:focus:ring-red-400 font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2" onClick={handleCountSubmit}>Submit Count</button>
                 </div>
                 <div className="flex flex-col gap-2">
                     <label htmlFor="size">Size of text file (MB)</label>
@@ -98,15 +98,15 @@ export default function Page() {
                         className='text-black'
                         onChange={(e: React.ChangeEvent<HTMLInputElement>) => setSize(Number(e.target.value))}
                     />
-                    <button type="button" onClick={handleSizeSubmit}>Submit Size</button>
+                    <button type="button" className="text-gray-900 bg-gradient-to-r from-red-200 via-red-300 to-yellow-200 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-red-100 dark:focus:ring-red-400 font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2" onClick={handleSizeSubmit}>Submit Size</button>
                 </div>
             </form>
             <div className="bg-white justify-center align-center text-center m-auto text-black overflow-auto p-5" style={{ height: "45vh", width: "86vw" }}>
                 {text}
             </div>
             <div className="flex justify-center mt-4">
-                <button type="button" onClick={handleCopyText} className="bg-blue-500 text-white p-2 rounded">Copy Text</button>
-                <button type="button" onClick={handleDownloadText} className="bg-green-500 text-white p-2 rounded ml-4">Download Text</button>
+                <button type="button" onClick={handleCopyText} className="text-gray-900 bg-gradient-to-r from-red-200 via-red-300 to-yellow-200 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-red-100 dark:focus:ring-red-400 font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2">Copy Text</button>
+                <button type="button" onClick={handleDownloadText} className="text-gray-900 bg-gradient-to-r from-red-200 via-red-300 to-yellow-200 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-red-100 dark:focus:ring-red-400 font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2">Download File</button>
             </div>
         </div>
     );
