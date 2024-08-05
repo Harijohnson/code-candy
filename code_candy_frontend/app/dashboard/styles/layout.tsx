@@ -7,7 +7,7 @@ const inter = Inter({ subsets: ['latin'], display: 'swap' });
    
  export default function Layout({ children }: { children: React.ReactNode }) {
    return (
-       <div className="flex-grow p-6 md:overflow-y-auto md:p-12">{children}</div>
+       <div className="flex-grow md:overflow-y-auto">{children}</div>
    );
  }
  export const experimental_ppr = true;

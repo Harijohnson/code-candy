@@ -19,7 +19,7 @@ export default function Style() {
         </div>
         <div className="px-6 py-4 text-center flex">
           <Link
-            href="/"
+            href="/dashboard/styles/gradient"
             type="button"
             className="w-64 text-white bg-gradient-to-br from-green-400 to-blue-600 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-green-200 dark:focus:ring-green-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center "
           >
@@ -62,7 +62,7 @@ export default function Style() {
           alt="Picture of the author"
         />
         <div className="px-6 py-4">
-          <div className="font-bold text-xl mb-2">Color Picker</div>
+          <div className="font-bold text-xl mb-2">Color Palette</div>
           <p className="text-gray-700 text-base">
             A color palette is a collection of colors that are grouped together
             for a specific purpose or theme.
@@ -70,7 +70,7 @@ export default function Style() {
         </div>
         <div className="px-6 py-4 text-center flex">
           <Link
-            href="/"
+            href="/dashboard/styles/color-palette"
             type="button"
             className="w-64 text-white bg-gradient-to-br from-green-400 to-blue-600 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-green-200 dark:focus:ring-green-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center "
           >
@@ -95,7 +95,7 @@ export default function Style() {
         </div>
         <div className="px-6 py-4 text-center flex">
           <Link
-            href="/"
+            href="/dashboard/styles/color-picker"
             type="button"
             className="w-64 text-white bg-gradient-to-br from-green-400 to-blue-600 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-green-200 dark:focus:ring-green-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center "
           >
