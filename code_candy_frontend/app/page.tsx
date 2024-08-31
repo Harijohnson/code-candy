@@ -5,6 +5,8 @@ import { Header } from "../components/Header/header"
 import { Footer } from "../components/Footer/footer"
 import { BodyCards } from "../components/Main_Body/bodyCards"
 import { BodyHead } from "@/components/Main_Body/bodyHead"
+import "./globals.css";
+
 export const metadata: Metadata = {
   title: "Next.js Enterprise Boilerplate",
   twitter: {

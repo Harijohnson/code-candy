@@ -125,84 +125,84 @@ export const LP_GRID_ITEMS = [
     ),
   },
 
-  {
-    title: "Showcase",
-    link: "/dashboard/showcase",
-    description: "Showcase your ideas to the world.",
-    icon: (
-      <svg
-      viewBox="0 0 24 24"
-      fill="currentColor"
-      height="3rem"
-      width="3rem"
+  // {
+  //   title: "Showcase",
+  //   link: "/dashboard/showcase",
+  //   description: "Showcase your ideas to the world.",
+  //   icon: (
+  //     <svg
+  //     viewBox="0 0 24 24"
+  //     fill="currentColor"
+  //     height="3rem"
+  //     width="3rem"
      
-    >
-      <path fill="none" d="M0 0h24v24H0z" />
-      <path d="M13 21v2h-2v-2H3a1 1 0 01-1-1V6h20v14a1 1 0 01-1 1h-8zm-9-2h16V8H4v11zm9-9h5v2h-5v-2zm0 4h5v2h-5v-2zm-4-4v3h3a3 3 0 11-3-3zM2 3h20v2H2V3z" />
-    </svg>
-    ),
-  },
-  {
-    title: "Reddit",
-    link: "/dashboard/reddit",
-    description: "Stay up-to-date with the latest news.",
-    icon: (
-      <svg
-      viewBox="0 0 21 21"
-      fill="currentColor"
-      height="3rem"
-      width="3rem"
+  //   >
+  //     <path fill="none" d="M0 0h24v24H0z" />
+  //     <path d="M13 21v2h-2v-2H3a1 1 0 01-1-1V6h20v14a1 1 0 01-1 1h-8zm-9-2h16V8H4v11zm9-9h5v2h-5v-2zm0 4h5v2h-5v-2zm-4-4v3h3a3 3 0 11-3-3zM2 3h20v2H2V3z" />
+  //   </svg>
+  //   ),
+  // },
+  // {
+  //   title: "Reddit",
+  //   link: "/dashboard/reddit",
+  //   description: "Stay up-to-date with the latest news.",
+  //   icon: (
+  //     <svg
+  //     viewBox="0 0 21 21"
+  //     fill="currentColor"
+  //     height="3rem"
+  //     width="3rem"
      
-    >
-      <g
-        fill="none"
-        fillRule="evenodd"
-        stroke="currentColor"
-        strokeLinecap="round"
-        strokeLinejoin="round"
-      >
-        <path d="M9.5 5.5a3 3 0 00-3 3v5a3 3 0 003 3l2.468-.001 1.715 2.43a1 1 0 00.696.415l.121.008a1 1 0 00.993-.884l.007-.116.001-1.853.999.001a3 3 0 003-3v-5a3 3 0 00-3-3z" />
-        <path d="M6.5 13.5l-2 2v-4h-.906a2 2 0 01-2-1.977l-.07-6a2 2 0 012-2.023H12.5a2 2 0 012 2v2" />
-      </g>
-    </svg>
-    ),
-  },
-  {
-    title: "Rubber Ducking",
-    link: "/dashboard/rubber-ducking",
-    description: "Explain your ideas in a clear and concise way.",
-    icon: (
-      <svg
-      viewBox="0 0 24 24"
-      fill="currentColor"
-      height="3rem"
-      width="3rem"
+  //   >
+  //     <g
+  //       fill="none"
+  //       fillRule="evenodd"
+  //       stroke="currentColor"
+  //       strokeLinecap="round"
+  //       strokeLinejoin="round"
+  //     >
+  //       <path d="M9.5 5.5a3 3 0 00-3 3v5a3 3 0 003 3l2.468-.001 1.715 2.43a1 1 0 00.696.415l.121.008a1 1 0 00.993-.884l.007-.116.001-1.853.999.001a3 3 0 003-3v-5a3 3 0 00-3-3z" />
+  //       <path d="M6.5 13.5l-2 2v-4h-.906a2 2 0 01-2-1.977l-.07-6a2 2 0 012-2.023H12.5a2 2 0 012 2v2" />
+  //     </g>
+  //   </svg>
+  //   ),
+  // },
+  // {
+  //   title: "Rubber Ducking",
+  //   link: "/dashboard/rubber-ducking",
+  //   description: "Explain your ideas in a clear and concise way.",
+  //   icon: (
+  //     <svg
+  //     viewBox="0 0 24 24"
+  //     fill="currentColor"
+  //     height="3rem"
+  //     width="3rem"
       
-    >
-      <path d="M8.5 5A1.5 1.5 0 007 6.5 1.5 1.5 0 008.5 8 1.5 1.5 0 0010 6.5 1.5 1.5 0 008.5 5M10 2a5 5 0 015 5c0 1.7-.85 3.2-2.14 4.1 1.58.15 3.36.51 5.14 1.4 3 1.5 4-.5 4-.5s-1 9-7 9H9s-5 0-5-5c0-3 3-4 2-6-4 0-4-3.5-4-3.5 1 .5 2.24.5 3 .15A5.02 5.02 0 0110 2z" />
-    </svg>
-    ),
-  },
-  {
-    title: "Profile",
-    link: "/dashboard/profile",
-    description: "Get to know yourself.",
-    icon: (
-      <svg fill="none" viewBox="0 0 24 24" height="3rem" width="3rem">
-      <path
-        fill="currentColor"
-        fillRule="evenodd"
-        d="M16 9a4 4 0 11-8 0 4 4 0 018 0zm-2 0a2 2 0 11-4 0 2 2 0 014 0z"
-        clipRule="evenodd"
-      />
-      <path
-        fill="currentColor"
-        fillRule="evenodd"
-        d="M12 1C5.925 1 1 5.925 1 12s4.925 11 11 11 11-4.925 11-11S18.075 1 12 1zM3 12c0 2.09.713 4.014 1.908 5.542A8.986 8.986 0 0112.065 14a8.984 8.984 0 017.092 3.458A9 9 0 103 12zm9 9a8.963 8.963 0 01-5.672-2.012A6.992 6.992 0 0112.065 16a6.991 6.991 0 015.689 2.92A8.964 8.964 0 0112 21z"
-        clipRule="evenodd"
-      />
-    </svg>
-    ),
-  }
+  //   >
+  //     <path d="M8.5 5A1.5 1.5 0 007 6.5 1.5 1.5 0 008.5 8 1.5 1.5 0 0010 6.5 1.5 1.5 0 008.5 5M10 2a5 5 0 015 5c0 1.7-.85 3.2-2.14 4.1 1.58.15 3.36.51 5.14 1.4 3 1.5 4-.5 4-.5s-1 9-7 9H9s-5 0-5-5c0-3 3-4 2-6-4 0-4-3.5-4-3.5 1 .5 2.24.5 3 .15A5.02 5.02 0 0110 2z" />
+  //   </svg>
+  //   ),
+  // },
+  // {
+  //   title: "Profile",
+  //   link: "/dashboard/profile",
+  //   description: "Get to know yourself.",
+  //   icon: (
+  //     <svg fill="none" viewBox="0 0 24 24" height="3rem" width="3rem">
+  //     <path
+  //       fill="currentColor"
+  //       fillRule="evenodd"
+  //       d="M16 9a4 4 0 11-8 0 4 4 0 018 0zm-2 0a2 2 0 11-4 0 2 2 0 014 0z"
+  //       clipRule="evenodd"
+  //     />
+  //     <path
+  //       fill="currentColor"
+  //       fillRule="evenodd"
+  //       d="M12 1C5.925 1 1 5.925 1 12s4.925 11 11 11 11-4.925 11-11S18.075 1 12 1zM3 12c0 2.09.713 4.014 1.908 5.542A8.986 8.986 0 0112.065 14a8.984 8.984 0 017.092 3.458A9 9 0 103 12zm9 9a8.963 8.963 0 01-5.672-2.012A6.992 6.992 0 0112.065 16a6.991 6.991 0 015.689 2.92A8.964 8.964 0 0112 21z"
+  //       clipRule="evenodd"
+  //     />
+  //   </svg>
+  //   ),
+  // }
 ];
   

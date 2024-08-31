@@ -35,7 +35,7 @@ export default function Page() {
   }, [htmlCode, cssCode, jsCode]);
 
   return (
-    <div className="w-full flex flex-col items-center bg-[#1e1e1e] text-white">
+    <div className="w-full flex flex-col items-center bg-[#1e1e1e] text-white rounded">
       <div className="w-full flex flex-wrap">
         <div className="w-full flex">
           <div className="w-1/3 p-2">
@@ -45,7 +45,7 @@ export default function Page() {
               height={200}
               minConstraints={[150, 100]}
               maxConstraints={[600, 400]}
-              className="resizable-box border p-2"
+              className="resizable-box border p-2 rounded"
             >
               <AceEditor
                 mode="html"
@@ -66,7 +66,7 @@ export default function Page() {
               height={200}
               minConstraints={[150, 100]}
               maxConstraints={[600, 400]}
-              className="resizable-box border p-2"
+              className="resizable-box border p-2 "
             >
               <AceEditor
                 mode="css"
@@ -87,7 +87,7 @@ export default function Page() {
               height={200}
               minConstraints={[150, 100]}
               maxConstraints={[600, 400]}
-              className="resizable-box border p-2"
+              className="resizable-box border p-2 "
             >
               <AceEditor
                 mode="javascript"
@@ -108,7 +108,7 @@ export default function Page() {
           srcDoc={iframeSrc}
           title="Preview"
           className="w-full h-full"
-          sandbox="allow-scripts"
+          sandbox="allow-scripts allow-same-origin" // Allow scripts
           style={{ backgroundColor: '#fff', color: '#000' }} // Light theme for preview
         />
       </div>
