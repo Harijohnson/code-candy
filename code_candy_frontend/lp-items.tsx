@@ -89,48 +89,24 @@ export const LP_GRID_ITEMS = [
     ),
   },
   {
-    title: "Chat Bot",
-    link: "/dashboard/chatbot",
-    description: "Chat Application with ease.",
+    title: "QR Generator",
+    link: "/dashboard/qr",
+    description: "QR Code Generator with ease.",
     icon: (
       <svg
-      viewBox="0 0 512 512"
-      fill="currentColor"
-      height="3rem"
-      width="3rem"
-      
-    >
-      <path
-        fill="none"
-        stroke="currentColor"
-        strokeLinejoin="round"
-        strokeWidth={32}
-        d="M408 64H104a56.16 56.16 0 00-56 56v192a56.16 56.16 0 0056 56h40v80l93.72-78.14a8 8 0 015.13-1.86H408a56.16 56.16 0 0056-56V120a56.16 56.16 0 00-56-56z"
-      />
-      <path d="M192 216 A32 32 0 0 1 160 248 A32 32 0 0 1 128 216 A32 32 0 0 1 192 216 z" />
-      <path d="M288 216 A32 32 0 0 1 256 248 A32 32 0 0 1 224 216 A32 32 0 0 1 288 216 z" />
-      <path d="M384 216 A32 32 0 0 1 352 248 A32 32 0 0 1 320 216 A32 32 0 0 1 384 216 z" />
-    </svg>
-    ),
-  },
-  {
-    title: "Text",
-    link: "/dashboard/text",
-    description: "Create and edit dummy text with ease.",
-    icon: (
-      <svg
-      fill="currentColor"
-      viewBox="0 0 16 16"
-      height="3rem"
-      width="3rem"
-     
-    >
-      <path
-        fillRule="evenodd"
-        d="M0 .5A.5.5 0 01.5 0h4a.5.5 0 010 1h-4A.5.5 0 010 .5zm0 2A.5.5 0 01.5 2h7a.5.5 0 010 1h-7a.5.5 0 01-.5-.5zm9 0a.5.5 0 01.5-.5h5a.5.5 0 010 1h-5a.5.5 0 01-.5-.5zm-9 2A.5.5 0 01.5 4h3a.5.5 0 010 1h-3a.5.5 0 01-.5-.5zm5 0a.5.5 0 01.5-.5h5a.5.5 0 010 1h-5a.5.5 0 01-.5-.5zm7 0a.5.5 0 01.5-.5h3a.5.5 0 010 1h-3a.5.5 0 01-.5-.5zm-12 2A.5.5 0 01.5 6h6a.5.5 0 010 1h-6a.5.5 0 01-.5-.5zm8 0a.5.5 0 01.5-.5h5a.5.5 0 010 1h-5a.5.5 0 01-.5-.5zm-8 2A.5.5 0 01.5 8h5a.5.5 0 010 1h-5a.5.5 0 01-.5-.5zm7 0a.5.5 0 01.5-.5h7a.5.5 0 010 1h-7a.5.5 0 01-.5-.5zm-7 2a.5.5 0 01.5-.5h8a.5.5 0 010 1h-8a.5.5 0 01-.5-.5zm0 2a.5.5 0 01.5-.5h4a.5.5 0 010 1h-4a.5.5 0 01-.5-.5zm0 2a.5.5 0 01.5-.5h2a.5.5 0 010 1h-2a.5.5 0 01-.5-.5z"
-      />
-    </svg>
-    ),
+        fill="currentColor"
+        viewBox="0 0 24 24"
+        height="3rem"
+        width="3rem"
+        
+      >
+        <path d="M2 2h2v2H2V2z" />
+        <path d="M6 0v6H0V0h6zM5 1H1v4h4V1zM4 12H2v2h2v-2z" />
+        <path d="M6 10v6H0v-6h6zm-5 1v4h4v-4H1zm11-9h2v2h-2V2z" />
+        <path d="M10 0v6h6V0h-6zm5 1v4h-4V1h4zM8 1V0h1v2H8v2H7V1h1zm0 5V4h1v2H8zM6 8V7h1V6h1v2h1V7h5v1h-4v1H7V8H6zm0 0v1H2V8H1v1H0V7h3v1h3zm10 1h-1V7h1v2zm-1 0h-1v2h2v-1h-1V9zm-4 0h2v1h-1v1h-1V9zm2 3v-1h-1v1h-1v1H9v1h3v-2h1zm0 0h3v1h-2v1h-1v-2zm-4-1v1h1v-2H7v1h2z" />
+        <path d="M7 12h1v3h4v1H7v-4zm9 2v2h-3v-1h2v-1h1z" />
+      </svg>
+      ),
   },
   {
     title: "Files",

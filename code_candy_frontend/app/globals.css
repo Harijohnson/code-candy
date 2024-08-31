@@ -38,3 +38,10 @@ body {
 }
 
 
+.resizable-box {
+  display: flex;
+  flex-direction: column;
+  background-color: #2d2d2d;
+}
+
+

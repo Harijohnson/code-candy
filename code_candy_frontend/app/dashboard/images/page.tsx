@@ -5,7 +5,7 @@ import { saveAs } from 'file-saver';
 import jsPDF from 'jspdf';
 
 // Configure Modal to use the correct element
-//Modal.setAppElement('#__next');
+// Modal.setAppElement('#__next');
 
 const filterPresets = [
     { name: 'Sepia', filter: 'grayscale(0%) sepia(100%) brightness(1) contrast(1)' },
