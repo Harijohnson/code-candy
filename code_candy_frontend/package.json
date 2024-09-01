@@ -13,6 +13,7 @@
     "@react-spring/web": "^9.7.4",
     "@storybook/react": "^8.2.6",
     "@use-gesture/react": "^10.3.1",
+    "axios": "^1.7.7",
     "brace": "^0.11.1",
     "class-variance-authority": "^0.7.0",
     "color": "^4.2.3",

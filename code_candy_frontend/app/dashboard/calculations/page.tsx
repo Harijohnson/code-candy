@@ -282,9 +282,9 @@ export default function Page() {
 
     return (
         <div className="flex">
-            <div className="flex flex-col w-[30vw] p-4 overflow-y-auto max-h-screen h-[24rem]"> 
+            <div className="flex flex-col w-[30vw] p-4 overflow-y-auto max-h-screen h-[37rem]"> 
                 {Object.keys(tabs).map((tab) => (
-                    <div
+                                        <div
                         key={tab}
                         onClick={() => handleTabClick(tab)}
                         className={`p-3 hover:bg-gray-200 text-center mb-2 cursor-pointer text-black ${selectedTab === tab ? 'bg-gray-300' : 'bg-white'}`}
